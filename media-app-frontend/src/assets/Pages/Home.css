@@ -1,0 +1,11 @@
+@media(max-width:928px){
+    .All{
+        height: 100%;
+        width: 100%;
+    }
+
+    .Cat{
+        height: 100%;
+        width: 100%;
+    }
+}

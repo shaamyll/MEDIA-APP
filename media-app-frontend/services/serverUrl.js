@@ -1,0 +1,1 @@
+export const serverUrl='https://media-app-server-s3no.onrender.com'
