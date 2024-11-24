@@ -1,5 +1,9 @@
-@media(max-width:900px){
-    #first{
-        padding-top: 300px;
+@media(max-width:928px){
+  #first {
+    padding-top: 200px;
+  }
+
+    #features{
+        margin-top: 50px;
     }
 }

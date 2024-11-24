@@ -12,13 +12,14 @@ function LandingPage() {
       <div id='first'
         className="d-flex justify-content-center align-items-center"
         style={{
-          height: "100vh",
+          paddingTop:"100px",
           fontFamily: "Poppins, serif",
           color: "white",
           backgroundColor: "#222831",
-          paddingTop: "0px",
         }}
       >
+
+
         <div
           className=" main d-flex flex-wrap rounded shadow"
           style={{
@@ -59,9 +60,9 @@ function LandingPage() {
       </div>
 
       {/* Features section */}
-      <div style={{ backgroundColor: "#222831" }}>
+      <div id='features' style={{ backgroundColor: "#222831" }}>
         <center>
-          <h3 className="p-5" style={{ fontFamily: "Poppins, serif", color: "white" }}>
+          <h3 className="" style={{ fontFamily: "Poppins, serif", color: "white", paddingTop:"150px"}}>
             Features
           </h3>
         </center>
