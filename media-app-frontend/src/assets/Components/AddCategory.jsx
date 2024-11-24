@@ -7,7 +7,6 @@ import Swal from 'sweetalert2'
 import { AiTwotoneDelete } from "react-icons/ai";
 
 
-
 function AddCategory() {
 
 
@@ -146,14 +145,17 @@ const videoDrop=async(e,cId)=>{
   return (
     <div className='pe-4'>
       <button className='btn btn-dark container rounded shadow mt-4 text-center' onClick={handleShow}>Add category</button>
-<div className="row mt-3 ">
+<div className=" row mt-3 ">
   {
     categoryDetails.length>0? categoryDetails.map((item)=>(
     <div>
-        <div style={{backgroundColor:"black"}} onDragOver={e=>videoOver(e)} onDrop={e=>videoDrop(e,item.id)} className="col-12 col-md-6 justify-content-between rounded shadow ps-3 pt-4 pb-4 mt-3">
+
+
+        <div style={{backgroundColor:"black", border:"1px solid white", width:"260px"}} onDragOver={e=>videoOver(e)} onDrop={e=>videoDrop(e,item.id)} className=" col-12 col-md-6 justify-content-between rounded shadow ps-3 pt-4 pb-4 mt-3">
           <p className='fs-4'>{item.categoryName}   <p style={{marginTop:"-30px"}}><AiTwotoneDelete onClick={()=>handleDeleteCategory(item.id)} className='me-4 ' style={{float:"right"}} /></p></p>
         
-        <div className="row pt-3">
+        
+        <div className="row pt-3" >
           { 
             item.allVideos.map(a=>(
               <p className=''>* {a.caption}</p>

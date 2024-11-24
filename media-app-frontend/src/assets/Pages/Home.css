@@ -1,11 +1,26 @@
-@media(max-width:928px){
+@media(max-width:932px){
     .All{
         height: 100%;
-        width: 100%;
+        width: auto;
+        margin: 0px;
+        padding: 0px;
     }
 
     .Cat{
         height: 100%;
         width: 100%;
+        margin-left: 45px;
     }
+
+    .viewVideo{
+        width: auto;
+    }
+
+    #heading {
+        margin: 0;
+        padding-left: 50px;
+        
+    }
+
+   
 }

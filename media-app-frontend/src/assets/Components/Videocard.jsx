@@ -13,6 +13,7 @@ import Swal from 'sweetalert2'
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
+import '../Components/Videocard.css'
 
 
 
@@ -77,11 +78,11 @@ const videoDragtart=(e,vId)=>{
      <>
       {
         // allVideos.map(video=>(
-          <div className="m-2 ms-3" style={{ height:"280px", width:"250px", color:"#222831"}} >
+          <div className=" m-2 ms-3 mb-5" style={{ height:"280px", width:"250px", color:"#222831"}} >
 
 
 
-    <MDBCard draggable={true} onDragStart={e=>videoDragtart(e,videoDetails.id)}  style={{backgroundColor:"black"}}>
+    <MDBCard id='fetch' draggable={true} onDragStart={e=>videoDragtart(e,videoDetails.id)}  style={{backgroundColor:"black" }}>
       <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
         <MDBCardImage style={{height:"180px", width:"100%"}}  src={videoDetails.imgUrl} fluid alt='...' />
         <a>

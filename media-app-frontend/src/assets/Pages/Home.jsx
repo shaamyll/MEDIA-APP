@@ -27,10 +27,10 @@ function Home() {
   
 
 
-  <div className="All row " style={{height:"auto"}}>
-    <div className="col-12 col-md-9 " style={{height:"auto"}}>
-      <h3 className='text-center'>All videos</h3>
-     <div className="div ms-5" style={{overflow:"auto"}}>
+  <div className="All row d-flex px-3" style={{height:"auto"}}>
+    <div className="col-12 col-md-8 " style={{height:"auto"}}>
+      <h3 className='AllVideos  ps-md-5 ' id='heading' >All videos</h3>
+     <div className="viewVideo  div ms-4 mt-3  " style={{overflow:"auto"}} >
      <ViewVideo addVideoResp={addVideoResp}/>
 
      </div>
@@ -40,9 +40,9 @@ function Home() {
 
 
 
-    <div className="Cat col-12 col-md-3 d-flex justify-content-center flex-column pt-5 pb-5 ms-4" style={{height:"100%"}}>
-      <h3 className='text center'>Add Category</h3>
-     <div className="div" style={{overflow:"auto"}}>
+    <div className="Cat col-12 col-md-3 d-flex justify-content-center flex-column  pb-5 mt-5" style={{ width:"300px"}}>
+      <h3 className='text '>Add Category</h3>
+     <div className="div" style={{overflow:"auto" }}>
      <AddCategory/>
      </div>
     </div>
